@@ -1,6 +1,6 @@
 generate_projects:
   terragrunt_parsing:
-    # gitRoot: ./terraform/live/terragrunt/env/dev
+    gitRoot: ./live/terragrunt/env/dev
     # filterPath: ./terraform/live/terragrunt/env/**
     parallel: true
     createProjectName: true
