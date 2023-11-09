@@ -1,0 +1,15 @@
+generate_projects:
+  terragrunt_parsing:
+    # gitRoot: ./terraform/live/terragrunt/env/dev
+    # filterPath: ./terraform/live/terragrunt/env/**
+    parallel: true
+    createProjectName: true
+    createWorkspace: true
+    defaultWorkflow: terragrunt_env
+workflows:
+  terragrunt_env:
+    plan:
+      steps:
+        - init
+        - plan
+        - run: echo "Hello World"
