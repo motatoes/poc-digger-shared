@@ -31,7 +31,7 @@ jobs:
           # env
 
       - name: digger run
-        uses: diggerhq/digger@v0.2.4
+        uses: diggerhq/digger@debug-terragrunt-generation-issue)
         with:
           disable-locking: true
           setup-aws: false
