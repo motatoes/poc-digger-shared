@@ -33,14 +33,8 @@ jobs:
       - name: digger run
         uses: diggerhq/digger@v0.2.4
         with:
-          setup-aws: true
-          # For OIDC:
-          #     https://docs.digger.dev/cloud-providers/authenticating-with-oidc-on-aws
-          #     https://github.com/aws-actions/configure-aws-credentials#OIDC
-          aws-role-to-assume: ${{ secrets.LAB_AWS_ROLE_TO_ASSUME }}
-          aws-region: eu-north-1
-
-          # https://github.com/diggerhq/digger/blob/develop/action.yml
+          disable-locking: true
+          setup-aws: false
           configure-checkout: true
           setup-terragrunt: true
         env:
