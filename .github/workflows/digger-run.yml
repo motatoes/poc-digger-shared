@@ -31,7 +31,7 @@ jobs:
           # env
 
       - name: digger run
-        uses: diggerhq/digger@debug-terragrunt-generation-issue
+        uses: diggerhq/digger@fix-terragrunt-skip-project
         with:
           disable-locking: true
           setup-aws: false
